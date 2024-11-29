@@ -1,3 +1,4 @@
-FROM php:7.4.16-apache
+FROM scratch
 
-COPY . /var/www/html
+USER non-root
+RUN echo "hello world"
